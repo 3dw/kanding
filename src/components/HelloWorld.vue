@@ -2,28 +2,8 @@
   .hello
     h1 {{ msg }}
     h2 透明、開放、協力、共好
-    h4 社區改造管理團隊聯合聲明(草稿待修)
-    .ui.segment.container
-      p 各位親愛的芳鄰 : 大家好！
-
-      p 國家新都成立於二十年前，時為內政部營建署所建，以成為全國示範社區為願景。二十年後，不但設備老化，需要汰舊換新 ; 許多制度面上的問題，如物業服務、清潔服務、垃圾處理都需革新 ; 此外，B1棟的訴訟還在進行 ; 增進鄰居互動的活動，政府相關補助申請及提昇社區便捷性等等，都待辦理。
-
-      p 經過19年來各屆管理委員會不同的治理模式，我們深信揚棄派系的攻訐文化，捥起袖子，用開放透明，協力共好的心態，塑建廉、能、效率的團隊，真正動手打造美麗社區更為重要。
-
-      p 孫浩剛與羅崇恩先生，用了半年多的時間，和我們一起討論出了社區三年改造藍圖，希望芳鄰能把社區託付三年，讓我們團隊有機會逐步完成這些政策和計畫。
-
-      p 第一年，以「改善物業管理、節能節流」為目標，體檢一切設備和管理措施，擬出最經濟合理的汰換期程 ; 第二年，「除舊佈新」，在區大修改規約、處理垃圾問題、完成制度改造。第三年之後則致力「增進社區動能，塑造和諧溫暖的永續宜居文化」。
-
-      p 「不增加管理費」是我們的前提。而「執掌管委會」則是必要的途徑。籲請各位芳鄰支持本團隊候選人，並配合選情，隨時更新「配票呼籲」。
-
-      p 若非取得管委會過半席次，說什麼都沒用~~~~所以期待各位芳鄰的是:
-
-      p ~~~~落實我們的配票呼籲，請用選票支持我們。
-      p ~~~~不要把出席委託書交給我們團隊以外的任何人。
-      p ~~~~請出席區權人會議，關心自己的社區。
-      p ~~~~請不要相信任何對團隊成員的造謠、抹黑的假訊息。
-
-    h4 第20屆管理委員聯合競選名單
+    doc1
+    h4 第20屆管理委員聯合競選名單(草稿待修)
     .ui.row.centered.container
       table.ui.celled.table(border='1')
         tbody
@@ -46,13 +26,18 @@
                 li(v-show="p.n == '李雅卿'" v-for='x in p.xs', v-bind:key='x') {{x}}
             td {{p.r}}
     .ui.row
-      iframe(src="https://drive.google.com/file/d/1BtjlAsvmW7JA2orEsHQZcjiHkfriCH4m/preview" width="640" height="480")
+      vedio1
 
 </template>
 
 <script>
+
+import doc1 from './doc1.vue'
+import vedio1 from './vedio1.vue'
+
 export default {
   name: 'Welcome',
+  components: { doc1, vedio1 },
   data () {
     return {
       msg: '崁頂社區國家新都',
@@ -90,6 +75,7 @@ export default {
 
 p {
   text-align: left;
+  font-size: 18px;
 }
 
 table {
@@ -135,7 +121,7 @@ th, td {
 
 li {
   display: inline-block;
-  margin: 0 1em;
+  margin: 0.5em 1em;
 }
 
 li::before {
