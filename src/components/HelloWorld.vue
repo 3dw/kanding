@@ -12,7 +12,7 @@
         <tr v-for = "p in people" v-bind:key = "p">
           <th>
             <a :href="p.url" target="_blank">
-             <img v-if = "p.i" :src = "'/static/img/' + p.i"/>
+             <img v-if = "p.i" :src = "'./static/img/' + p.i"/>
               <h2>{{p.n}}</h2>
             </a>
           </th>
