@@ -1,13 +1,15 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>第20屆管理委員聯合競選名單</h2>
+    <h2>透明、開放、協力、共好</h2>
+    <h4>第20屆管理委員聯合競選名單</h4>
     <div class="ui centered container">
       <table border="1" class="ui celled table">
         <tr>
           <th>姓名</th>
           <th>選區</th>
-          <th>專長</th>
+          <th>經歷與專長</th>
+          <th>參選原因</th>
         </tr>
         <tr v-for = "p in people" v-bind:key = "p">
           <th>
@@ -22,6 +24,7 @@
               <li v-for = "x in p.xs" v-bind:key = "x">{{x}}</li>
             </ol>
           </td>
+          <td>{{p.r}}</td>
         </tr>
       </table>
     </div>
