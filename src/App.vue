@@ -1,7 +1,13 @@
-<template>
-  <div id="app">
-    <HelloWorld/>
-  </div>
+<template lang="jade">
+  #app
+    .ui.menu
+      router-link.item(to="/" exact='')
+        i.home.icon
+        span 首頁
+      router-link.item(to="/links" exact='')
+        i.book.icon
+        span 連結
+    router-view
 </template>
 
 <script>
@@ -22,6 +28,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

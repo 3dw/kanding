@@ -1,34 +1,27 @@
-<template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>透明、開放、協力、共好</h2>
-    <h4>第20屆管理委員聯合競選名單</h4>
-    <div class="ui centered container">
-      <table border="1" class="ui celled table">
-        <tr>
-          <th>姓名</th>
-          <th>選區</th>
-          <th>經歷與專長</th>
-          <th>參選原因</th>
-        </tr>
-        <tr v-for = "p in people" v-bind:key = "p">
-          <th>
-            <a :href="p.url" target="_blank">
-             <img v-if = "p.i" :src = "'./static/img/' + p.i"/>
-              <h2>{{p.n}}</h2>
-            </a>
-          </th>
-          <td>{{p.s}}</td>
-          <td>
-            <ol>
-              <li v-for = "x in p.xs" v-bind:key = "x">{{x}}</li>
-            </ol>
-          </td>
-          <td>{{p.r}}</td>
-        </tr>
-      </table>
-    </div>
-  </div>
+<template lang="jade">
+  .hello
+    h1 {{ msg }}
+    h2 透明、開放、協力、共好
+    h4 第20屆管理委員聯合競選名單
+    .ui.centered.container
+      table.ui.celled.table(border='1')
+        tbody
+          tr
+            th 姓名
+            th 選區
+            th 經歷與專長
+            th 參選原因
+          tr(v-for='p in people', v-bind:key='p')
+            th
+              a(:href='p.url', target='_blank')
+                img(v-if='p.i', :src="'./static/img/' + p.i")
+                h2 {{p.n}}
+            td {{p.s}}
+            td
+              ol
+                li(v-for='x in p.xs', v-bind:key='x') {{x}}
+            td {{p.r}}
+
 </template>
 
 <script>
@@ -38,10 +31,10 @@ export default {
     return {
       msg: '崁頂社區國家新都',
       people: [
-        {n: '李雅卿', i: '李雅卿.jpg', url: 'https://www.facebook.com/profile.php?id=100001542523317', s: '龍騰區', xs: ['新聞', '統整', '教育', '會議', '法律', '文化']},
+        {n: '李雅卿', i: '李雅卿.jpg', url: 'https://www.facebook.com/profile.php?id=100001542523317', s: '龍騰區', xs: ['新聞', '統整', '教育', '會議', '法律', '文化'], r: '透明、開放、協力、共好的社區打造'},
         {n: '孫浩剛', i: '孫浩剛.jpg', url: 'https://www.facebook.com/profile.php?id=100011497422460', s: '龍騰區', xs: ['物業20年', '保全', '總幹事', '物業法規', '土木營造', '網購', '消防']},
         {n: '陳纓元', s: '龍騰區', xs: ['銀行', '金融業']},
-        {n: '崔樂勇', s: '龍騰區', xs: ['法律', '社區運作']},
+        {n: '崔樂勇', i: '崔樂勇.jpg', s: '龍騰區', xs: ['法律', '社區運作']},
         {n: '唐光華', s: '龍騰區', xs: ['新聞', '政治', '教育', '在地']},
         {n: '鍾宛庭', s: '龍騰區'},
         {n: '蘇錦樑', s: '鯉躍區', xs: ['生意', '公關', '環境']},
@@ -65,9 +58,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
 
 .container {
   display: flex;
