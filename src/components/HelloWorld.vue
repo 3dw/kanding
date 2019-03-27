@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
     <h2>第20屆管理委員聯合競選名單</h2>
     <div class="ui centered container">
-      <table border="1">
+      <table border="1" class="ui celled table">
         <tr>
           <th>姓名</th>
           <th>選區</th>
@@ -74,8 +74,6 @@ h1, h2 {
 }
 
 table {
-  display: inline-table;
-  margin: 1em 1em;
 }
 
 th img {
@@ -89,6 +87,7 @@ th {
 
 th, td {
   padding: .5em;
+  text-align: center;
 }
 
 li {
