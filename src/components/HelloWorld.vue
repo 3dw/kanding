@@ -3,7 +3,7 @@
     h1 {{ msg }}
     h2 透明、開放、協力、共好
     h4 第20屆管理委員聯合競選名單
-    .ui.centered.container
+    .ui.row.centered.container
       table.ui.celled.table(border='1')
         tbody
           tr
@@ -21,6 +21,8 @@
               ol
                 li(v-for='x in p.xs', v-bind:key='x') {{x}}
             td {{p.r}}
+    .ui.row
+      iframe(src="https://drive.google.com/file/d/1BtjlAsvmW7JA2orEsHQZcjiHkfriCH4m/preview" width="640" height="480")
 
 </template>
 
