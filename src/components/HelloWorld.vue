@@ -109,11 +109,11 @@ th {
 }
 
 th.li {
-  background-color: #fc9;  
+  background-color: #fc9;
 }
 
 th.fo {
-  background-color: #f99;  
+  background-color: #f99;
 }
 
 td.lo {
