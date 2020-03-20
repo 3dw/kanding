@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Links from '@/components/Links'
-import Notes from '@/components/Notes'
 import Docs from '@/components/Docs'
-import Vedios from '@/components/Vedios'
+import Links from '@/components/Links'
+import Photos from '@/components/Photos'
 
 Vue.use(Router)
 
@@ -16,9 +15,9 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/notes',
-      name: 'Notes',
-      component: Notes
+      path: '/docs',
+      name: 'Docs',
+      component: Docs
     },
     {
       path: '/links',
@@ -26,14 +25,9 @@ export default new Router({
       component: Links
     },
     {
-      path: '/docs',
-      name: 'Docs',
-      component: Docs
-    },
-    {
-      path: '/vedios',
-      name: 'Vedios',
-      component: Vedios
+      path: '/photos',
+      name: 'Photos',
+      component: Photos
     }
   ]
 })

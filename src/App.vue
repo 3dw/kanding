@@ -4,18 +4,15 @@
       router-link.item(to="/" exact='')
         i.home.icon
         span 首頁
-      router-link.item(to="/notes" exact='')
+      router-link.item(to="/docs" exact='')
         i.book.icon
         span 公告欄
-      router-link.item(to="/links" exact='')
-        i.sitemap.icon
-        span 連結
-      router-link.item(to="/docs" exact='')
+      router-link.item(to="/photos" exact='')
         i.copy.icon
-        span 文件匣
-      router-link.item(to="/vedios" exact='')
-        i.play.icon
-        span 影音庫
+        span 相簿
+      router-link.item(to="/links" exact='')
+        i.link.icon
+        span 連結
     router-view
 </template>
 
