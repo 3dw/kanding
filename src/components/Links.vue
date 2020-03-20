@@ -18,7 +18,7 @@ export default {
         },
         {
           name: '淡水國家新都社團',
-          url: 'https://www.facebook.com/groups/1722266604770327/" target="_blank'
+          url: 'https://www.facebook.com/groups/1722266604770327/'
         }
       ]
     }
