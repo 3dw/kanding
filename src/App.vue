@@ -4,14 +4,14 @@
       router-link.item(to="/" exact='')
         i.home.icon
         span 首頁
-      router-link.item(to="/docs" exact='')
+      //router-link.item(to="/docs" exact='')
         i.book.icon
         span 公告欄
       router-link.item(to="/photos" exact='')
         i.copy.icon
         span 相簿
       router-link.item(to="/links" exact='')
-        i.link.icon
+        i.exchange.icon
         span 連結
     router-view
 </template>
@@ -28,8 +28,17 @@ export default {
 </script>
 
 <style>
+
+html {
+  font-size: 22px !important;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif,
+               'Microsoft JhengHei',
+                'Microsoft YaHei',
+                'STHeiti',
+                'Apple LiGothic Medium';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

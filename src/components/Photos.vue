@@ -1,7 +1,9 @@
 <template lang="jade">
   .hello
-    h1 照片庫
-    .ui.row
+    h1 相簿
+    .ui.list
+      .item
+        img(src="../assets/photo001.jpg")
 
 </template>
 
@@ -19,7 +21,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.container {
+img {
+  width: 80%;
+  margin: 0 auto;
 }
 
 </style>
