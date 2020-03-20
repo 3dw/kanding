@@ -48,4 +48,9 @@ html {
 .router-link-active {
   background-color: #fcf !important;
 }
+
+.ui.list .item {
+  font-size: .8rem;
+}
+
 </style>
