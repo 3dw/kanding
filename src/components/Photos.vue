@@ -3,7 +3,7 @@
     h1 相簿
     .ui.list
       .item
-        img(src="../assets/photo001.jpg")
+        img(src="/static/img/photo001.jpg")
 
 </template>
 
