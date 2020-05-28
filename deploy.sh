@@ -10,7 +10,7 @@ npm run build
 cd dist
 
 # if you are deploying to a custom domain
-echo 'kanging.elder.game.tw' > CNAME
+echo 'kanding.elder.game.tw' > CNAME
 
 git init
 git add -A
@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:3dw/kanging.git master:gh-pages
+git push -f git@github.com:3dw/kanding.git master:gh-pages
 
 cd -
