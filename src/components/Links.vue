@@ -1,7 +1,7 @@
 <template lang="jade">
   .hello
     h1 相關連結
-    .ui.bulleted.left.aligned.list.container
+    .ui.bulleted.left.aligned.divided.list.container
       a.item(v-for="l in links", :href = "l.url", :key="l.url", target="_blank") {{ l.name }}
     hr
 </template>
